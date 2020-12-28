@@ -1,0 +1,6 @@
+type Item @model @auth(rules: [{ allow: owner }]) {
+  id: ID!
+  name: String!
+  amount: Int!
+  purchased: Boolean
+}
